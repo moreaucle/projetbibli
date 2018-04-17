@@ -7,18 +7,9 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
--- -----------------------------------------------------
--- Schema mydb
--- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
-
--- -----------------------------------------------------
--- Table `mydb`.`editeur`
+-- Table `editeur`
 -- -----------------------------------------------------
 CREATE TABLE `editeur` (
   `id_editeur` INT NOT NULL AUTO_INCREMENT,
@@ -27,7 +18,7 @@ CREATE TABLE `editeur` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`collection`
+-- Table `collection`
 -- -----------------------------------------------------
 CREATE TABLE `collection` (
   `id_collection` INT NOT NULL AUTO_INCREMENT,
@@ -44,7 +35,7 @@ CREATE TABLE `collection` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`livrephysique`
+-- Table `livrephysique`
 -- -----------------------------------------------------
 CREATE TABLE `livrephysique` (
   `num_fiche` INT(11) NOT NULL,
@@ -54,7 +45,7 @@ CREATE TABLE `livrephysique` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`type`
+-- Table `type`
 -- -----------------------------------------------------
 CREATE TABLE `type` (
   `idtype` INT NOT NULL AUTO_INCREMENT,
@@ -63,7 +54,7 @@ CREATE TABLE `type` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`langue`
+-- Table `langue`
 -- -----------------------------------------------------
 CREATE TABLE `langue` (
   `idlangue` INT NOT NULL AUTO_INCREMENT,
@@ -72,7 +63,7 @@ CREATE TABLE `langue` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`livre`
+-- Table `livre`
 -- -----------------------------------------------------
 CREATE `livre` (
   `id_livre` INT NOT NULL AUTO_INCREMENT,
@@ -116,7 +107,7 @@ CREATE `livre` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`utilisateur`
+-- Table `utilisateur`
 -- -----------------------------------------------------
 CREATE TABLE `utilisateur` (
   `identifiant_utilisateur` VARCHAR(15) NOT NULL,
@@ -126,7 +117,7 @@ CREATE TABLE `utilisateur` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`livre_propose`
+-- Table `livre_propose`
 -- -----------------------------------------------------
 CREATE TABLE `livre_propose` (
   `id_livre_propose` INT NOT NULL AUTO_INCREMENT,
@@ -139,7 +130,7 @@ CREATE TABLE `livre_propose` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`proposition`
+-- Table `proposition`
 -- -----------------------------------------------------
 CREATE TABLE `proposition` (
   `id_proposition` INT NOT NULL AUTO_INCREMENT,
@@ -165,7 +156,7 @@ CREATE TABLE `proposition` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`emprunt`
+-- Table `emprunt`
 -- -----------------------------------------------------
 CREATE TABLE `emprunt` (
   `id_emprunt` INT NOT NULL AUTO_INCREMENT,
