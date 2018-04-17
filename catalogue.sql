@@ -1,3 +1,4 @@
+#nouveau commentaire
 -- MySQL dump 10.14  Distrib 5.5.52-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: bibli
